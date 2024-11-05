@@ -18,14 +18,21 @@
 @import url("tweaks/popup-search.css");
 
 /* Enable translucency on browser toolbars. (MacOS only) */
-/**/@import url("tweaks/mac-translucent.css") (-moz-bool-pref: "uc.tweak.mac-translucent");/**/
+/**/
+@import url("tweaks/mac-translucent.css") (-moz-bool-pref: "uc.tweak.mac-translucent");
+/**/
 
 /* Import custom stylesheet instead of modifying the theme files. */
 @import url("custom.css");
 
 /* Replacing Userchrome Toggle icon with Arc sidebar icon */
-:is(.webextension-browser-action, .eom-addon-button)[data-extensionid="userchrome-toggle@joolee.nl"] .toolbarbutton-icon { list-style-image: url(./icons/userchrome-toggle.svg); }
-:is(.webextension-browser-action, .eom-addon-button)[data-extensionid="copy-frame-url@jeffersonscher.com"] .toolbarbutton-icon { list-style-image: url(./icons/link.svg); }
+:is(.webextension-browser-action, .eom-addon-button)[data-extensionid="userchrome-toggle-extended@n2ezr.ru"] .toolbarbutton-icon {
+    list-style-image: url(./icons/userchrome-toggle.svg);
+}
+
+:is(.webextension-browser-action, .eom-addon-button)[data-extensionid="copy-frame-url@jeffersonscher.com"] .toolbarbutton-icon {
+    list-style-image: url(./icons/link.svg);
+}
 
 /* Using Segoe UI Variable font (uncomment below to apply) */
 /* * {font-family: "Segoe UI Variable Display" !important;} */
